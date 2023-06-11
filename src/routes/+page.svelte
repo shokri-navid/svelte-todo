@@ -1,7 +1,7 @@
 
 <script lang="ts">
-    import TodoItem from '../components/TodoItem.svelte'
     import TodoForm from '../components/TodoForm.svelte'
+	import TodoList from '../components/TodoList.svelte';
     let name = 'navid';
 </script>
 <style>
@@ -19,4 +19,4 @@
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 <h3>Hi, <span class="green">{name[0].toUpperCase()+name.substring(1)}</span></h3>
 <TodoForm></TodoForm>
-<TodoItem></TodoItem>
+<TodoList></TodoList>

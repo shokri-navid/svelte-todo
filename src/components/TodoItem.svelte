@@ -1,5 +1,8 @@
-<script>
+<script lang="ts">
+	import type { Todo } from "../models/Todo";
+
     
+    export let data:Todo;
 </script>
 
 <style>
@@ -28,11 +31,11 @@
     }
 </style>
 <div>
-    <h3>Title</h3>
-    <p>description ...</p>
+    <h3>{data.title}</h3>
+    <p>{data.description}</p>
     <div class="control">
         <div class="due-date"></div>
-        <div class="expire-date"></div>
+        <div class="expire-date">{data.expireDate}</div>
         <div class="status"></div>
     </div>
 
